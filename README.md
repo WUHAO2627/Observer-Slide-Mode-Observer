@@ -41,31 +41,7 @@ where:
 
 The observer creates estimated currents $\hat{i}_\alpha$ and $\hat{i}_\beta$ and continuously compares them with the measured currents. With the PMSM model, the current state equation is:
 
-$$
-\frac{d}{dt}\begin{bmatrix}
-\hat{i}_\alpha \\
-\hat{i}_\beta
-\end{bmatrix}
-=
-\begin{bmatrix}
--\dfrac{R_s}{L_d} & -\dfrac{\omega_e(L_d-L_q)}{L_d} \\[8pt]
-\dfrac{\omega_e(L_d-L_q)}{L_d} & -\dfrac{R_s}{L_d}
-\end{bmatrix}
-\begin{bmatrix}
-\hat{i}_\alpha \\
-\hat{i}_\beta
-\end{bmatrix}
-+
-\frac{1}{L_d}\begin{bmatrix}
-u_\alpha \\
-u_\beta
-\end{bmatrix}
--
-\frac{1}{L_d}\begin{bmatrix}
-\nu_\alpha \\
-\nu_\beta
-\end{bmatrix}
-$$
+For details, refer to the doc in repo.
 
 ## 4. Observer Structure
 The SMO introduces a discontinuous correction term:
@@ -81,17 +57,7 @@ The correction term forces the estimated current trajectory toward the actual cu
 
 In the α-β stationary frame, the correction term is written in matrix form:
 
-$$
-\begin{bmatrix}
-\nu_\alpha \\
-\nu_\beta
-\end{bmatrix}
-=
-\begin{bmatrix}
-h\cdot sign(\hat{i}_\alpha - i_\alpha) \\
-h\cdot sign(\hat{i}_\beta - i_\beta)
-\end{bmatrix}
-$$
+for details, refer to doc in repo
 
 ## 5. Sliding Surface Concept
 The sliding surface is defined by the current estimation error:
