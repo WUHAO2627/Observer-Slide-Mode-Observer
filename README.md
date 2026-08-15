@@ -1,4 +1,4 @@
-# Sliding Mode Observer (SMO) for PMSM Sensorless Control - by Wu hao
+# Sliding Mode Observer (SMO) for PMSM Sensorless Control
 
 ## Table of Contents
 1. [Introduction](#1-introduction)
